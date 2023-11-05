@@ -9,7 +9,7 @@ except:
 try:
     os.system("mkdir /sdcard/www")
     os.system("mkdir /sdcard/www/htdocs")
-    os.system("mv index.php /sdcard/www/htdocs/index.php")
+    os.system("cp index.php /sdcard/www/htdocs/index.php")
     # os.system("ln -s /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/ /sdcard/www/htdocs")
     
     os.system("echo 'alias apacheStart=\"python /data/data/com.termux/files/home/server/start.py\"' >> /data/data/com.termux/files/usr/etc/bash.bashrc")
